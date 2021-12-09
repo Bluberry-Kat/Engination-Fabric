@@ -6,6 +6,7 @@ import com.elytradev.engination.block.EnginationBlocks;
 import net.fabricmc.fabric.api.loot.v1.FabricLootSupplierBuilder;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback.LootTableSetter;
+import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
@@ -41,7 +42,7 @@ public class EnginationItems {
 		
 		Registry.register(Registry.ITEM, new Identifier("engination", "celery"), CELERY);
 		Registry.register(Registry.ITEM, new Identifier("engination", "tomato_seeds"), TOMATO_SEEDS);
-		
+		CompostingChanceRegistry.INSTANCE.add(TOMATO_SEEDS, 0.3f);
 		
 		
 		

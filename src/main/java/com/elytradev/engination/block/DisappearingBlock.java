@@ -35,6 +35,7 @@ public abstract class DisappearingBlock extends Block {
 				.materialColor(DyeColor.WHITE)
 				.hardness(1)
 				.resistance(15)
+				.nonOpaque()
 				.build()
 				);
 		

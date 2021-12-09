@@ -12,5 +12,7 @@ public class EnginationClient implements ClientModInitializer {
 	public void onInitializeClient() {
 		BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutoutMipped(),
 				EnginationBlocks.BLOCK_GROUPS.get("disappearing").toArray(new Block[0]));
+		BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(),
+				EnginationBlocks.TOMATO_PLANT);
 	}
 }
